@@ -21,7 +21,7 @@ function onInputChange(evt) {
   function fetchCountries(searchQuery) {
     fetch(`https://restcountries.com/v2/name/${searchQuery}`)
       .then(r => r.json())
-      .then(e => e.map(e => markupTemplate(e.name)))
+      //   .then(e => e.map(e => markupTemplate(e.name)))
       .then(e => markupTemplate(countryTpl(...e)))
       .catch(alertError)
       .finally();
