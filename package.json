@@ -1,0 +1,30 @@
+{
+  "name": "countries",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leekirill/countries.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leekirill/countries/issues"
+  },
+  "homepage": "https://github.com/leekirill/countries#readme",
+  "devDependencies": {
+    "@pnotify/bootstrap4": "^5.2.0",
+    "@pnotify/core": "^5.2.0",
+    "lodash.debounce": "^4.0.8",
+    "parcel": "^2.6.2",
+    "parcel-plugin-handlebars-precompile": "^1.0.2",
+    "pnotify": "^5.2.0"
+  },
+  "dependencies": {
+    "material-design-icons": "^3.0.1"
+  }
+}
