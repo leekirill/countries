@@ -17,7 +17,8 @@
 }
 
 .country-search__input:hover {
-    background-color: #f7f7f7;
+    background-color: #fff;
+    border: 1px solid #ececec;
     outline: none;
     cursor: pointer;
 }
@@ -37,19 +38,22 @@
 }
 
 .country-search__input {
-    height: 30px;
-    width: 230px;
+    height: 60px;
+    width: 375px;
     border: none;
-    background: #ececec;
+    background-color: #fff;
+    border: 1px solid #989898;
     border-radius: 5px;
-    padding-left: 10px;
+    padding: 0 20px;
+    font-size: 24px;
 }
 
 .countries-list {
-    list-style: none;
+    transition: 250ms;
 }
 
 .countreis-list__item {
+    
     margin-bottom: 5px;
 }
 
