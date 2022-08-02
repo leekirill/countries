@@ -1,9 +1,6 @@
-* {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 body {
-
+    
+    font-family: Arial, Helvetica, sans-serif;
     background: #ececec;
 
     .container {
@@ -47,12 +44,18 @@ body {
             }
         }
 
-
-
         .countries-list {
-            transition: 250ms;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            padding: 0;
             &__item {
-                margin-bottom: 5px;
+                display: block;
+                padding: 14px 0px 14px 24px;
+                border-bottom: 1px solid #aeaeae;
+                &:last-child {
+                    border: none;
+                }
             }
         }
 
@@ -69,21 +72,26 @@ body {
             text-align: left;
         }
 
-        .profile-item {
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            margin-left: 0px;
-             &:first-child {
-                margin-left: 50px;
+        .profile {
+            &-item {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                margin-left: 0px;
+        
+                &:first-child {
+                    margin-left: 50px;
+                }
+            }
+            &-wrapper {
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: center;
             }
         }
 
-        .profile-wrapper {
-            display: flex;
-            flex-direction: row-reverse;
-            justify-content: center;
-        }
+
+
 
         .country-name {
             margin-bottom: 0px;

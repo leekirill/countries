@@ -5,20 +5,20 @@ import { error, success } from '@pnotify/core';
 
 function alertSuccess() {
   success({
-    text: "You're cool!",
-    delay: 2000,
+    text: 'We find your country!',
+    delay: 3000,
   });
 }
 
 function alertError() {
   error({
-    text: "I'm an error message.",
-    delay: 2000,
+    text: 'No matches found. Please enter a more specific query',
+    delay: 3000,
   });
 }
 function maxLenghError() {
   error({
     text: 'Too many matches found. Please enter a more specific query!',
-    delay: 2000,
+    delay: 3000,
   });
 }
