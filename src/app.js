@@ -1,1 +1,1 @@
-import './js/fetchCountries';
+import './js/fetch-api';
