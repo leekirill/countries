@@ -1,0 +1,113 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #ececec;
+}
+body .container {
+  display: grid;
+  gap: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body .container .main-heading {
+  text-align: center;
+}
+body .container .country-search__input {
+  transition: 250ms;
+}
+body .container .country-search__input:focus {
+  background-color: #fff;
+  outline: none;
+  box-shadow: 0px 20px 30px -10px rgba(0, 0, 0, 0.3);
+}
+body .container .country-search__input:hover {
+  background-color: #fff;
+  outline: none;
+  cursor: pointer;
+}
+body .container .country-search {
+  display: flex;
+  text-align: center;
+  gap: 10px;
+}
+body .container .country-search__input {
+  height: 60px;
+  width: 375px;
+  border: none;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 0 24px;
+  font-size: 18px;
+}
+body .container .countries-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0;
+}
+body .container .countries-list__item {
+  display: block;
+  padding: 14px 0px 14px 24px;
+  border-bottom: 1px solid #aeaeae;
+}
+body .container .countries-list__item:last-child {
+  border: none;
+}
+body .container img {
+  width: 260px;
+  height: auto;
+}
+body .container .languages-list {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+body .container .profile-item {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 0px;
+}
+body .container .profile-item:first-child {
+  margin-left: 50px;
+}
+body .container .profile-wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+body .container .country-name {
+  margin-bottom: 0px;
+  text-align: center;
+}
+body .container .data-item {
+  display: flex;
+  flex-direction: column;
+  margin-right: 14px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+body .container .data-item b, body .container .languages-list b {
+  display: block;
+  margin-bottom: 4px;
+}
+body .container .results-wrapper {
+  width: 100%;
+}
+body .container .close-btn {
+  height: 60px;
+  width: 60px;
+  border: none;
+  border-radius: 6px;
+  font-size: 30px;
+  color: #5a5a5a;
+  background: #d3d3d3;
+  transition: 250ms;
+}
+body .container .close-btn:hover {
+  cursor: pointer;
+  background: #bebebe;
+}
+
+/*# sourceMappingURL=/countries/styles.b921742f.css.map */
