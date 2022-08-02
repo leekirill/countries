@@ -11,16 +11,6 @@ body {
         .main-heading {
             text-align: center;
         }
-
-        .country-search__input {
-            transition: 250ms;
-            &:focus {
-                background-color: #fff;
-                outline: none;
-                box-shadow: 0px 20px 30px -10px rgba(0 ,0 ,0,.3)
-            }
-        }
-
         .country-search {
             display: flex;
             justify-content: center;
@@ -31,6 +21,12 @@ body {
                 border-radius: 4px;
                 padding: 0 24px;
                 font-size: 18px;
+                transition: 250ms;
+                &:focus {
+                    background-color: #fff;
+                    outline: none;
+                    box-shadow: 0px 20px 30px -10px rgba(0, 0, 0, .3)
+                }
             }
         }
 
@@ -45,9 +41,6 @@ body {
                 }
             }
         }
-
-
-
         img {
             width: 260px;
             height: auto;
@@ -79,11 +72,9 @@ body {
         .country-name {
             text-align: center;
         }
-
         .data-item {
             margin-bottom: 10px;
         }
-
         .data-item b, .languages-list b {
             display: block;
             margin-bottom: 4px;
