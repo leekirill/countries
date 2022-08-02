@@ -1,11 +1,8 @@
 body {
-    
     font-family: Arial, Helvetica, sans-serif;
     background: #ececec;
 
     .container {
-        display: grid;
-        gap: 30px;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -22,16 +19,11 @@ body {
                 outline: none;
                 box-shadow: 0px 20px 30px -10px rgba(0 ,0 ,0,.3)
             }
-            &:hover {
-                background-color: #fff;
-                outline: none;
-                cursor: pointer;
-            }
         }
 
         .country-search {
             display: flex;
-            text-align: center;
+            justify-content: center;
             gap: 10px;
             &__input {
                 height: 60px;
@@ -69,7 +61,6 @@ body {
         .languages-list {
             list-style: none;
             padding: 0;
-            text-align: left;
         }
 
         .profile {
@@ -90,20 +81,12 @@ body {
             }
         }
 
-
-
-
         .country-name {
-            margin-bottom: 0px;
             text-align: center;
         }
 
         .data-item {
-            display: flex;
-            flex-direction: column;
-            margin-right: 14px;
             margin-bottom: 10px;
-            text-align: left;
         }
 
         .data-item b, .languages-list b {

@@ -4,7 +4,9 @@
   "description": "",
   "scripts": {
     "dev": "parcel index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html --public-url /countries/ --no-minify",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -15,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/leekirill/countries/issues"
   },
-  "homepage": "https://github.com/leekirill/countries#readme",
+  "homepage": "https://leekirill.github.io/countries",
   "devDependencies": {
     "@pnotify/bootstrap4": "^5.2.0",
     "@pnotify/core": "^5.2.0",
@@ -27,6 +29,7 @@
   },
   "dependencies": {
     "@parcel/transformer-sass": "^2.6.2",
+    "gh-pages": "^4.0.0",
     "joi": "^17.6.0",
     "material-design-icons": "^3.0.1"
   }
