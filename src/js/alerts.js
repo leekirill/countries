@@ -1,7 +1,14 @@
-export { alertError, maxLenghError };
+export { alertError, maxLenghError, alertSuccess };
 import '@pnotify/core/dist/BrightTheme.css';
 import '@pnotify/core/dist/PNotify.css';
-import { error } from '@pnotify/core';
+import { error, success } from '@pnotify/core';
+
+function alertSuccess() {
+  success({
+    text: "You're cool!",
+    delay: 2000,
+  });
+}
 
 function alertError() {
   error({

@@ -1,0 +1,124 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+
+    background: #ececec;
+
+    .container {
+        display: grid;
+        gap: 30px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        .main-heading {
+            text-align: center;
+        }
+
+        .country-search__input {
+            transition: 250ms;
+            &:focus {
+                background-color: #fff;
+                outline: none;
+            }
+            &:hover {
+                background-color: #fff;
+                outline: none;
+                cursor: pointer;
+            }
+        }
+
+        .country-search {
+            display: flex;
+            text-align: center;
+            gap: 10px;
+            &__input {
+                height: 60px;
+                width: 375px;
+                border: none;
+                background-color: #fff;
+                border-radius: 4px;
+                padding: 0 24px;
+                font-size: 18px;
+            }
+        }
+
+
+
+        .countries-list {
+            transition: 250ms;
+            &__item {
+                margin-bottom: 5px;
+            }
+        }
+
+
+
+        img {
+            width: 260px;
+            height: auto;
+        }
+
+        .languages-list {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+        }
+
+        .profile-item {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin-left: 0px;
+             &:first-child {
+                margin-left: 50px;
+            }
+        }
+
+        .profile-wrapper {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+        }
+
+        .country-name {
+            margin-bottom: 0px;
+            text-align: center;
+        }
+
+        .data-item {
+            display: flex;
+            flex-direction: column;
+            margin-right: 14px;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+
+        .data-item b, .languages-list b {
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .results-wrapper {
+            width: 100%;
+        }
+
+        .close-btn {
+            height: 60px;
+            width: 60px;
+            border: none;
+            border-radius: 6px;
+            font-size: 40px;
+            color: #5a5a5a;
+            background: #d3d3d3;
+            transition: 250ms;
+            &:hover {
+                cursor: pointer;
+                background: #bebebe;
+            }
+        }
+    }
+}

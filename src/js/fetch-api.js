@@ -4,7 +4,7 @@ import { markupTemplate, clearTemplate } from './markup';
 import API from './api-service'; // импорт апи [работа с бэкендом]
 import { refs } from './getRefs'; // импорт refs с домом [забираем рефы]
 
-import { alertError, maxLenghError } from './errors'; // импорт плагинов [pnotify и lodash]
+import { alertError, maxLenghError, alertSuccess } from './alerts'; // импорт плагинов [pnotify и lodash]
 const debounce = require('lodash/debounce');
 
 // слушатель событий
@@ -25,6 +25,7 @@ function validator(searchResult) {
     maxLenghError();
   } else if (searchResult.length === 1) {
     markupTemplate(countryTpl(...searchResult));
+    alertSuccess();
   } else {
     markupTemplate(countryListTpl(searchResult));
   }
