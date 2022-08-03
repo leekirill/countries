@@ -16,17 +16,23 @@ body {
             justify-content: center;
             gap: 10px;
             &__input {
-                width: 375px;
+                width: 200px;
                 border: none;
                 border-radius: 4px;
                 padding: 0 24px;
                 font-size: 18px;
                 transition: 250ms;
+
                 &:focus {
                     background-color: #fff;
                     outline: none;
                     box-shadow: 0px 20px 30px -10px rgba(0, 0, 0, .3)
                 }
+            }
+        }
+        @media screen and (min-width: 420px) {
+            .country-search__input {
+                width: 350px;
             }
         }
 
