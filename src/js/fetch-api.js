@@ -14,7 +14,16 @@ refs.input.addEventListener('input', debounce(onInputChange, 500));
 function onInputChange(evt) {
   const result = evt.target.value;
 
-  if (result !== '') API.fetchCountries(result).then(validator).catch(alertError);
+  async function asyncFetchCountries(value) {
+    const promise = await API.fetchCountries(value);
+    try {
+      validator(promise);
+    } catch {
+      alertError();
+    }
+  }
+
+  if (result !== '') asyncFetchCountries(result);
 
   refs.input.innerHTML = '';
   clearTemplate();
